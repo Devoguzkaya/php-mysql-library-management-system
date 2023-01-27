@@ -1,0 +1,82 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body::after {
+  content: "";
+  background-image: url(indir.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+html {
+  font-size: 1em;
+}
+body {
+  font-size: 100%;
+}
+a:visited {
+  color: black;
+}
+a img,
+:link img,
+:visited img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  display: block;
+  padding: 20px;
+  background-color: white;
+}
+.nav-main {
+  font-size: larger;
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #7d7575;
+}
+
+.nav-item {
+  background-color: #7d7575;
+  position: relative;
+  margin: auto;
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.navbar a {
+  color: #e2e2e2;
+}
+.duyuru {
+  display: inline-block;
+  width: 800px;
+  position: absolute;
+  right: 0px;
+}
+
+.footer {
+  background-color: #7d7575;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-height: 150px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.6;
+}
