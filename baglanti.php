@@ -1,5 +1,15 @@
-
-    <?php
-    $bagno=mysqli_connect("localhost","root","","");
-    $vt=mysqli_select_db($bagno,"kutuphane");
-    ?>
+<?php
+$servername = "localhost";
+$database = "kutuphane";
+$username = "root";
+$password = "";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+// if (!$conn) {
+//     die("Connection failed: " . 
+// mysqli_connect_error());
+// }
+// echo "Connected successfully";
+// mysqli_close($conn);
+?>

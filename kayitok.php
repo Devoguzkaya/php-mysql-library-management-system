@@ -8,8 +8,13 @@
     $kitapturu=$_POST["kitapturu"];
     $basimyil=$_POST["basimyili"];
     $sql="INSERT INTO kitaplar VALUES (null,\"$ISBN\",\"$kitapadi\",\"$yazaradi\",\"$yazarsoyadi\",\"$yayinevi\",\"$kitapturu\",\"$basimyili\")";
-    
     $sorgu=mysqli_query($bagno,$sql);
 
-    if($sorgu) header ("Location:kayit.php");
+    if($sorgu)
+     {
+      echo "başarılı";
+     }                          //header ("Location:kitaplar.php");
+    else {
+      echo "başarısız";
+    };
    ?>

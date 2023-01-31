@@ -4,18 +4,20 @@
 </head>
 <body>
     <form name="kayit" method="post" action="kayitok.php">
-        ISBN<input type="text" name="ISBN"> 
-        Kitap adi<input type="text" name="kitapadi"><br><br>
-        Yazar adi <input type="text" name="yazaradi">
-        Yazar soyadi <input type="text" name="yazarsoyadi"><br><br>
-        Yayın evi <input type="text" name="yayinevi">
-        kitap türü <input type="text" name="kitapturu">
-        basim yılı <input type="text" name="basimyil"><br>
-        <input type="submit" value="kaydet">
-</form>
-        <br><br><br>
-        <table border=1>
-            <tr bgcolor="gray">
+        <table>
+            <tr><td>  ISBN: <input type="text" name="ISBN"></td></tr>
+            <tr><td>  Kitap adı: <input type="text" name="kitapadi"></td></tr>
+            <tr> <td> Yazar adı: <input type="text" name="yazaradi"></td></tr>
+            <tr> <td> Yazar soyadı: <input type="text" name="yazarsoyadi"></td></tr>
+            <tr> <td> Yayınevi: <input type="text" name="yayinevi"></td></tr>
+            <tr>  <td> Kitap türü: <input type="text" name="kitapturu"></td></tr>
+            <tr> <td> Basım yılı: <input type="text" name="basimyil"></td></tr>
+            <tr><td><input type="submit" value="Kaydet"></td></tr>
+    </table>
+    </form>
+        <hr>
+        <table>
+            <tr>
                 <td>ID</id>
                 <td>ISBN</td>
                 <td>KİTAP ADI</td>
@@ -28,7 +30,7 @@
 <?php
 include('baglanti.php');
 $sql="SELECT * FROM kitaplar";
-$sorgu=mysqli_query($bagno,$sql);
+$sorgu=mysqli_query($conn,$sql);
 $renk=1;
 while($dizi=mysqli_fetch_array($sorgu))
 { 
